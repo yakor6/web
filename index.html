@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+    <title>vCard Ярослав</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/> 
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type='text/javascript'>
+		function validate(){
+			//Считаем значения из полей name и email в переменные x и y
+			var x=document.forms['form']['name'].value;
+			var y=document.forms['form']['email'].value;
+			var z=document.forms['form']['message'].value;
+			//Если поле name пустое выведем сообщение и предотвратим отправку формы
+			if (x.length==0){
+				document.getElementById('namef').innerHTML='*данное поле обязательно для заполнения';
+				return false;
+			}
+			//Если поле email пустое выведем сообщение и предотвратим отправку формы
+			if (y.length==0){
+				document.getElementById('emailf').innerHTML='*данное поле обязательно для заполнения';
+				return false;
+			}
+			//Проверим содержит ли значение введенное в поле email символы @ и .
+			at=y.indexOf("@");
+			dot=y.indexOf(".");
+			//Если поле не содержит эти символы знач email введен не верно
+			if (at<1 || dot <1){
+				document.getElementById('emailf').innerHTML='*email введен не верно';
+				return false;
+			}
+			if (z.length==0){
+				document.getElementById('messagef').innerHTML='*данное поле обязательно для заполнения';
+				return false;
+			}
+   
+			{document.write("Спасибо за обратную связь, " +x); 
+			return false; 
+			} 
+		}
+	</script>
+</head>
+    <body>
+        <!-- Container -->
+        <div id="container">
+            <!-- Top -->
+			<div class="top"> 
+            	<!-- Logo -->
+            	<div id="logo">
+                	<h2>ПРИЩИП ЯРОСЛАВ</h2>
+                    <h4>ИНЖЕНЕР-ЭЛЕКТРИК & МОЛОДОЙ РАЗРАБОТЧИК</h4>
+                </div>
+                <!-- /Logo -->
+                
+                <!-- Social Icons -->
+                <ul class="socialicons">
+                	<li><a href="#" class="social-text">Профили в соцсетях</a></li>
+					<li><a href="#" class="social-facebook" onclick="this.href='http://www.facebook.com'"></a></li>
+                    <li><a href="#" class="social-googleplus" onclick="this.href='https://plus.google.com'"></a></li>
+                </ul>
+                <!-- /Social Icons -->
+            </div>
+            <!-- /Top -->
+            <!-- Content -->
+            <div id="content">
+                <!-- Profile -->
+                <div id="profile"> 
+                 	<!-- About section -->
+                	<div class="about">
+						<div class="photo-inner"><img src="images/photo.jpg" height="186" width="153" /></div>
+                        <h1>Прищип Ярослав</h1>
+                        <h3>Инженер-электрик & молодой разработчик</h3>
+                        <p>Мне нравится узнавать, что-то новое и развиватся. Я может быть и не так опытен, но я человек, с которым вам захочется познакомиться и поработать </p>
+                    </div>
+                    <!-- /About section -->
+                    <!-- Personal info section -->
+                	<ul class="personal-info">
+						<li><label>Name</label><span>Прищип Ярослав</span></li>
+                        <li><label>Date of birth</label><span>08.04.1993</span></li>
+                        <li><label>Address</label><span>Украина, г.Запорожье</span></li>
+                        <li><label>Email</label><span>priship_yaroslav@mail.ru</span></li>
+                        <li><label>Phone</label><span>+380(095)592-82-40</span></li>
+                        <li><label>Website</label><span>www.p_yaroslav.com</span></li>
+                    </ul>
+                    <!-- /Personal info section -->
+                </div>        
+                <!-- /Profile --> 
+                <!-- Menu -->
+                <div class="menu">
+					<ul class="tabs">
+                    	<li><a href="#profile" class="tab-profile">Profile</a></li>
+                    	<li><a href="#resume" class="tab-resume">Resume</a></li>
+                    	<li><a href="#contact" class="tab-contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /Menu --> 
+                 <!-- Resume -->
+                <div id="resume">
+                	 <div class="timeline-section">
+                        <!-- Timeline for Employment  -->   
+                        <h3 class="main-heading"><span>Опыт работы</span></h3>   
+                        <ul class="timeline">
+                            <li>
+                                                   
+                                <div class="timelineUnit">
+                                    <h4>Помощник энергетика<span lass="timelineDate">09.2016-по настоящие время</span></h4>
+                                    <h5>Компания "Александр"</h5>
+                                    <p>В настоящее время Группа осуществляет деятельность в сфере горно-металлургического производства, продаж горношахтного оборудования, абразивного инструмента и материалов, развивает проекты на рынке недвижимости и в сельском хозяйстве.</p>
+                                </div>
+                            </li>
+                            <li>
+                         
+                                <div class="timelineUnit">
+                                    <h4>Техник авиационной и радиоэлектронной аппаратуры<span lass="timelineDate">01.2016-09.2016</span></h4>
+                                    <h5>Вертолеты Мотор Сич</h5>
+                                    <p>- выполнение работ согласно конструкторской документации/электрических схем; 
+- работы по монтажу/демонтажу блоков авиационной и радиоэлектронной аппаратуры, жгутов, печатных плат, сложных электронных узлов, на вертолетах Ми-2, Ми-8;</p>
+                                </div>
+                            </li>
+                            <li>
+                     
+                                <div class="timelineUnit">
+                                    <h4>Электрик<span lass="timelineDate">04.2015-02.2016</span></h4>
+                                    <h5>Компания "Александр"</h5>
+                                    <p>В настоящее время Группа осуществляет деятельность в сфере горно-металлургического производства, продаж горношахтного оборудования, абразивного инструмента и материалов, развивает проекты на рынке недвижимости и в сельском хозяйстве.</p>
+                                </div>
+                            </li>
+                            <div class="clear"></div>
+                        </ul> 
+                        <!-- /Timeline for Employment  -->
+
+                        <!-- Timeline for Education  -->   
+                        <h3 class="main-heading"><span>Образование</span></h3>   
+                         <ul class="timeline">
+                            <li>            
+                                <div class="timelineUnit">
+                                    <h4>Программное обеспечение<span class="timelineDate">2015-2017</span></h4>
+                                    <h5>ЗНТУ</h5>
+                                    <p>Специалист</p>
+                                </div>
+                            </li>
+                            <li>             
+                                <div class="timelineUnit">
+                                    <h4>Электротехнические системы электроснабжения<span class="timelineDate">2012-2016</span></h4>
+                                    <h5>ЗНТУ</h5>
+                                    <p>Магистр</p>
+                                </div>
+                            </li>
+                            <div class="clear"></div>
+                        </ul> 
+                        <!-- /Timeline for Education  -->              
+                    </div>
+                    <div class="skills-section">
+                        <!-- Skills -->
+                        <h3 class="main-heading"><span>Программы</span></h3> 
+                        <ul class="skills">
+                            <li>
+                                <h4>Adobe Photoshop</h4>
+                                <span class="rat4"></span>
+                            </li>
+                            <li>
+                                <h4>AutoCAD</h4>
+                                <span class="rat3"></span>
+                            </li>
+                            <li>
+                                <h4>Компас 3D;</h4>
+                                <span class="rat5"></span>
+                            </li>
+                            <li>
+                                <h4>MathCAD</h4>
+                                <span class="rat4"></span>
+                            </li>
+                            <li>
+                                <h4>MatLAB/Simulink</h4>
+                                <span class="rat3"></span>
+                            </li>
+                            <li>
+                                <h4>MS Office 2000/2007/2010</h4>
+                                <span class="rat6"></span>
+                            </li> 
+                        </ul>
+                   
+                        <h3 class="main-heading"><span>Програмировае</span></h3> 
+                        <ul class="skills">
+                            <li>
+                                <h4>HTML, CSS</h4>
+                                <span class="rat3"></span>
+                            </li>
+                            <li>
+                                <h4>Php/Sql</h4>
+                                <span class="rat2"></span>
+                            </li>
+                            <li>
+                                <h4>C++ (Qt)</h4>
+                                <span class="rat3"></span>
+                            </li>
+                            <li>
+                                <h4>Git;</h4>
+                                <span class="rat3"></span>
+                            </li>
+                            <li>
+                                <h4>Flash, Corel Draw;</h4>
+                                <span class="rat4"></span>
+                            </li>
+                        </ul>
+                        <h3 class="main-heading"><span>Знание языков</span></h3> 
+                        <ul class="skills">
+                            <li>
+                                <h4>Украинский</h4>
+                                <span class="rat6"></span>
+                            </li>
+                            <li>
+                                <h4>Русский</h4>
+                                <span class="rat6"></span>
+                            </li>
+                            <li>
+                                <h4>Английский</h4>
+                                <span class="rat4"></span>
+                            </li>
+                        </ul>
+                     <!-- /Skills -->
+                     </div>
+                </div>
+                <!-- /Resume -->  
+				<!-- Contact -->
+                <div id="contact">
+                	
+                	<!-- Contact Info -->
+                    <div class="contact-info">
+                    <h3 class="main-heading"><span>Контактная информация</span></h3>
+                	<ul>
+                        <li>Украина, город Запорожье, Бульвар Центральный <br /><br /></li>
+                        <li>Email: priship_yaroslav@mail.ru</li>
+                        <li>Phone: +380(095)592-82-40</li>
+                        <li>Website: www.p_yaroslav.com</li>
+                    </ul>
+                    </div>
+                    <!-- /Contact Info -->
+					
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h3 class="main-heading"><span>Оставайтесь на связи</span></h3>
+                        <div id="contact-status"></div>
+                        <form name='form' onsubmit='return validate()' id="contactform">
+							<p>
+								<label for="name">Ваше Имя</label>
+								<input type='text' name='name' class="input"> <span style='color:red' id='namef'></span><br />
+							</p>
+							<p>
+								<label for="email">Ваш Email</label>
+								<input type='text' name='email' class="input"> <span style='color:red' id='emailf'></span><br />
+							</p>
+							<p>
+								<label for="message">Ваше сообщение</label>
+								<textarea type='text' name='message' cols="88" rows="6" class="textarea" id='messagef'></textarea>
+								<br><span style='color:red' id='namef'></span><br />
+							</p>
+							<input type='submit' value="Send your message" class="submit">
+						</form>					
+                    </div>
+                    <!-- /Contact Form -->
+                </div>
+                <!-- /contact -->
+            </div>
+            <!-- /Content -->       
+            <!-- Footer -->
+			<div class="footer">
+            	<div class="copyright">Copyright © 2016 Pryshcyp Yaroslav</div>
+            </div>
+            <!-- /Footer -->     
+        </div>
+		<!-- /Container -->	
+		
+
+    </body>
+	</html>
