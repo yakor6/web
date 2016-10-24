@@ -38,7 +38,109 @@
 			return false; 
 			} 
 		}
+		<script type='text/javascript'>
 		function validate(){
+			//Считаем значения из полей name и email в переменные x и y
+			var x=document.forms['form']['name'].value;
+			var y=document.forms['form']['email'].value;
+			var z=document.forms['form']['message'].value;
+			//Если поле name пустое выведем сообщение и предотвратим отправку формы
+			if (x.length==0){
+				document.getElementById('namef').innerHTML='*данное поле обязательно для заполнения';
+				return false;
+			}
+			//Если поле email пустое выведем сообщение и предотвратим отправку формы
+			if (y.length==0){
+				document.getElementById('emailf').innerHTML='*данное поле обязательно для заполнения';
+				return false;
+			}
+			//Проверим содержит ли значение введенное в поле email символы @ и .
+			at=y.indexOf("@");
+			dot=y.indexOf(".");
+			//Если поле не содержит эти символы знач email введен не верно
+			if (at<1 || dot <1){
+				document.getElementById('emailf').innerHTML='*email введен не верно';
+				return false;
+			}
+			if (z.length==0){
+				document.getElementById('messagef').innerHTML='*данное поле обязательно для заполнения';
+				return false;
+			}
+   
+			{document.write("Спасибо за обратную связь, " +x); 
+			return false; 
+			} 
+		}
+		function validate(){
+			//Считаем значения из полей name и email в переменные x и y
+			var x=document.forms['form']['name'].value;
+			var y=document.forms['form']['email'].value;
+			var z=document.forms['form']['message'].value;
+			//Если поле name пустое выведем сообщение и предотвратим отправку формы
+			if (x.length==0){
+				document.getElementById('namef').innerHTML='*данное поле обязательно для заполнения';
+				return false;
+			}
+			//Если поле email пустое выведем сообщение и предотвратим отправку формы
+			if (y.length==0){
+				document.getElementById('emailf').innerHTML='*данное поле обязательно для заполнения';
+				return false;
+			}
+			//Проверим содержит ли значение введенное в поле email символы @ и .
+			at=y.indexOf("@");
+			dot=y.indexOf(".");
+			//Если поле не содержит эти символы знач email введен не верно
+			if (at<1 || dot <1){
+				document.getElementById('emailf').innerHTML='*email введен не верно';
+				return false;
+			}
+			if (z.length==0){
+				document.getElementById('messagef').innerHTML='*данное поле обязательно для заполнения';
+				return false;
+			}
+   
+			{document.write("Спасибо за обратную связь, " +x); 
+			return false; 
+			} 
+		}
+	</script>
+</head>
+    <body>
+        <!-- Container -->
+        <div id="container">
+            <!-- Top -->
+			<div class="top"> 
+            	<!-- Logo -->
+            	<div id="logo">
+                	<h2>ПРИЩИП ЯРОСЛАВ</h2>
+                    <h4>ИНЖЕНЕР-ЭЛЕКТРИК & МОЛОДОЙ РАЗРАБОТЧИК</h4>
+                </div>
+                <!-- /Logo -->
+                
+                <!-- Social Icons -->
+                <ul class="socialicons">
+                	<li><a href="#" class="social-text">Профили в соцсетях</a></li>
+					<li><a href="#" class="social-facebook" onclick="this.href='http://www.facebook.com'"></a></li>
+                    <li><a href="#" class="social-googleplus" onclick="this.href='https://plus.google.com'"></a></li>
+                </ul>
+                <!-- /Social Icons -->
+            </div>
+            <!-- /Top -->
+            <!-- Content -->
+            <div id="content">
+                <!-- Profile -->
+                <div id="profile"> 
+                 	<!-- About section -->
+                	<div class="about">
+						<div class="photo-inner"><img src="images/photo.jpg" height="186" width="153" /></div>
+                        <h1>Прищип Ярослав</h1>
+                        <h3>Инженер-электрик & молодой разработчик</h3>
+                        <p>Мне нравится узнавать, что-то новое и развиватся. Я может быть и не так опытен, но я человек, с которым вам захочется познакомиться и поработать </p>
+                    </div>
+                    <!-- /About section -->
+                    <!-- Personal info section -->
+                	<ul class="personal-info
+					function validate(){
 			//Считаем значения из полей name и email в переменные x и y
 			var x=document.forms['form']['name'].value;
 			var y=document.forms['form']['email'].value;
